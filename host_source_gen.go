@@ -8,7 +8,6 @@ import (
 	"sync"
 
 	"gocql"
-	//"github.com/gocql/gocql"
 )
 
 func gen(clause, field string) {

@@ -24,7 +24,6 @@ import (
 	"time"
 
 	"gocql/internals/streams"
-	//"github.com/gocql/gocql/internal/streams"
 )
 
 const (

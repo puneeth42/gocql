@@ -14,7 +14,6 @@ import (
 	"strings"
 
 	"gocql/internals/murmur"
-	//"github.com/gocql/gocql/internal/murmur"
 )
 
 // a token partitioner

@@ -21,8 +21,6 @@ import (
 
 	"gocql/internals/lru"
 	"gocql/internals/streams"
-	//"github.com/gocql/gocql/internal/lru"
-	//"github.com/gocql/gocql/internal/streams"
 )
 
 var (
