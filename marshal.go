@@ -43,7 +43,7 @@ type Unmarshaler interface {
 }
 
 // Marshal returns the CQL encoding of the value for the Cassandra
-// internal type described by the info parameter.
+// internals type described by the info parameter.
 func Marshal(info TypeInfo, value interface{}) ([]byte, error) {
 	if info.Version() < protoVersion1 {
 		panic("protocol version not set")
@@ -116,7 +116,7 @@ func Marshal(info TypeInfo, value interface{}) ([]byte, error) {
 }
 
 // Unmarshal parses the CQL encoded data based on the info parameter that
-// describes the Cassandra internal data type and stores the result in the
+// describes the Cassandra internals data type and stores the result in the
 // value pointed by value.
 func Unmarshal(info TypeInfo, data []byte, value interface{}) error {
 	if v, ok := value.(Unmarshaler); ok {
@@ -2289,7 +2289,7 @@ func (u UDTTypeInfo) String() string {
 
 // String returns a human readable name for the Cassandra datatype
 // described by t.
-// Type is the identifier of a Cassandra internal datatype.
+// Type is the identifier of a Cassandra internals datatype.
 type Type int
 
 const (

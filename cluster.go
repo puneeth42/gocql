@@ -110,7 +110,7 @@ type ClusterConfig struct {
 		DisableSchemaEvents bool
 	}
 
-	// DisableSkipMetadata will override the internal result metadata cache so that the driver does not
+	// DisableSkipMetadata will override the internals result metadata cache so that the driver does not
 	// send skip_metadata for queries, this means that the result will always contain
 	// the metadata to parse the rows and will not reuse the metadata from the prepared
 	// statement.
@@ -144,7 +144,7 @@ type ClusterConfig struct {
 	// (default: 200 microseconds)
 	WriteCoalesceWaitTime time.Duration
 
-	// internal config for testing
+	// internals config for testing
 	disableControlConn bool
 }
 

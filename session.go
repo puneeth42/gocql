@@ -1028,7 +1028,7 @@ func (q *Query) PageState(state []byte) *Query {
 	return q
 }
 
-// NoSkipMetadata will override the internal result metadata cache so that the driver does not
+// NoSkipMetadata will override the internals result metadata cache so that the driver does not
 // send skip_metadata for queries, this means that the result will always contain
 // the metadata to parse the rows and will not reuse the metadata from the prepared
 // staement. This should only be used to work around cassandra bugs, such as when using
